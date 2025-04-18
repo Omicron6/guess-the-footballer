@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Footballer</title>
+    <link rel="icon" href="https://i.guim.co.uk/img/media/758103c5dae7de3f2ea455aceb23c1d1d1aaac4e/0_186_2048_1229/master/2048.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=c75d5f93db463eb625ea110ae8f15277" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-futbol"></i> Guess the Footballer</h1>
+        <div class="game-stats">
+            <div class="stat">
+                <i class="fas fa-star"></i>
+                <span id="score">Score: 0</span>
+            </div>
+            <div class="stat">
+                <i class="fas fa-clock"></i>
+                <span id="time">Time: 0s</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="game-container">
+        <div class="player-info">
+            <div class="stat-card">
+                <i class="fas fa-flag"></i>
+                <h3>Nationality</h3>
+                <p id="nationality">-</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Club</h3>
+                <p id="club">-</p>
+            </div>
+        </div>
+
+        <div class="clue-container">
+            <div class="clue-number">1</div>
+            <div class="clue-text" id="clue-text">Click 'Next Player' to start!</div>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="guess-input" placeholder="Enter player name..." autocomplete="off">
+            <button id="submit-guess">
+                <i class="fas fa-check"></i>
+                Submit
+            </button>
+            <button id="hint-button">
+                <i class="fas fa-lightbulb"></i>
+                Hint
+            </button>
+        </div>
+
+        <div class="feedback" id="feedback"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
